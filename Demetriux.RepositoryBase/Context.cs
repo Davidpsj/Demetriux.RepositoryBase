@@ -27,7 +27,7 @@ namespace Demetriux.RepositoryBase
 
         public Context() 
         {
-            Database.Connection.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+            Database.Connection.ConnectionString = ConfigurationManager.ConnectionStrings["Context"].ConnectionString;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
